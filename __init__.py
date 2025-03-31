@@ -3,12 +3,12 @@ from flask import render_template
 from flask import json                                                                                                                                     
 app = Flask(__name__)                                                                                                                  
 
-
 @app.route('/<int:valeur>')
 def exercice(valeur):
     etoiles = ''
     for j in range(valeur):
-        etoiles += ('*' * (j+1))
+        for i in range(valeur):
+            etoiles += ('*' (i+1)/j)
         etoiles += '<br>'
     return etoiles
     
