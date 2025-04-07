@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/somme/<int:n>')
+@app.route('/<int:n>')
 def somme(n):
     total = 0
 
