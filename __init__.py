@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/<int:n>')
+@app.route('/somme/<int:n>')
 def somme(n):
     total = 0
 
@@ -12,8 +12,9 @@ def somme(n):
         if (i % 5 == 0 or i % 7 == 0) and i % 11 != 0:
             total += i
         
-        # Si la somme dépasse 5000, on arrête la boucle
+        # Si la somme dépasse 5000, on arrête la boucle mais on ne dépasse pas 5000
         if total > 5000:
+            total = 5000
             break
     
     return f"La somme finale est : {total}"
