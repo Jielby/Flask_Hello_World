@@ -9,11 +9,11 @@ def exercice(valeur):
     result = []
 
     result.append(a)
-    if n > 1:
+    if valeur > 1:
         result.append(b)
 
     # Calcul des autres termes
-    for i in range(2, n):
+    for i in range(2, valeur):
         a, b = b, a + b
         result.append(b)
 
