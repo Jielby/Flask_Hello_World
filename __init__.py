@@ -16,7 +16,5 @@ def exercice():
             ligne += str(j)
         lignes.append(ligne)
 
-    return render_template('pyramide.html', lignes=lignes)
-
 if __name__ == "__main__":
   app.run(debug=True)
