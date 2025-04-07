@@ -13,7 +13,7 @@ def exercice(valeur):
         for k in range(j+1):
             etoiles += '*'
         etoiles += '<br>'
-    return etoiles
+    return etoiles 
 
 if name == "main":
   app.run(debug=True)
