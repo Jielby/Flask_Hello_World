@@ -12,12 +12,10 @@ def exercice(valeur):
     if valeur > 1:
         result.append(b)
 
-    # Calcul des autres termes
     for i in range(2, valeur):
         a, b = b, a + b
         result.append(b)
 
-    # Affichage de la suite sous forme de texte
     return ', '.join(str(x) for x in result)
         
 if __name__ == "__main__":
